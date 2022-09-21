@@ -135,14 +135,16 @@ print()
 print('*****  end section 6 ********')
 print()
 
-''''
 
 
 print()
 print('*****  start section 7 - using pop method ********')
 print()
 
+#a = phonebook.pop('Chris' , 'not found')
+#print(a)
 
+#print(phonebook)
 
 
 
@@ -156,9 +158,11 @@ print()
 print()
 print('*****  start section 8 - using popitem ********')
 print()
+#pops out the last element of the dictionary 
 
-
-
+#a = phonebook.popitem()
+#print(a)
+#print(phonebook)
 
 
 
@@ -171,9 +175,19 @@ print()
 print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
+#random.choice
 
+#long method
+list_of_keys = list(phonebook)
+print(list_of_keys)
+random_key = random.choice(list_of_keys)
+print(random_key)
+random_val = phonebook[random_key]
+print(random_val)
 
-
+#short method
+random_val = phonebook[random.choice(list(phonebook))]
+print(random_val)
 
 
 print()
@@ -181,7 +195,6 @@ print('*****  end section 9 ********')
 print()
 
 
-'''
 
 
 
